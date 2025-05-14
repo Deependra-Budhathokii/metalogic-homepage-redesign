@@ -48,13 +48,21 @@ const Herosection: React.FC<HerosectionProps> = ({ imageUrl, Descrip }) => { // 
                     />
                 </div>
 
-
-
-
-
+                {/* Decorative typography */}
+                {/* <div className={`absolute top-[20%] left-1/2    text-[2rem] font-extrabold text-transparent hero_hi select-none pointer-events-none font-hero-hi opacity-50 animate-pulse-scale`}>
+                    INNOVATION
+                </div>
+                <div className={`absolute top-[35%] left-1/2    text-[2rem] font-extrabold text-transparent hero_hi select-none pointer-events-none font-hero-hi opacity-50 animate-pulse-scale`}>
+                    TRANSFORMATION
+                </div>
+                <div className={`absolute top-[50%] left-1/2    text-[2rem] font-extrabold text-transparent hero_hi select-none pointer-events-none font-hero-hi opacity-50 animate-pulse-scale`}>
+                    GROWTH
+                </div> */}
 
 
             </div>
+
+
 
 
 
