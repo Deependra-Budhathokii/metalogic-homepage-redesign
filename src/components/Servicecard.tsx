@@ -23,7 +23,7 @@ const Servicecard = ({ title, descrip, url }: ServicecardProps) => {
 
             <div className="p-3 card_details">
                 <h2 className="text-2xl font-bold card_title">{title}</h2>
-                <p className="mt-3 mb-6 text-justify">{descrip.length > 66 ? `${descrip.substring(0, 66)}...` : descrip}</p>
+                <p className="mt-3 mb-6 text-justify text-gray-600">{descrip.length > 66 ? `${descrip.substring(0, 66)}...` : descrip}</p>
                 <Link href="/">
                     <button className="px-4 py-2 text-white duration-300 bg-black rounded-full hover:outline hover:bg-transparent hover:text-black">
                         Read more
