@@ -1,9 +1,10 @@
+import Herosection from "@/components/Herosection";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <main>
-
+      <Herosection imageUrl="/metalogic-hero-image.svg" Descrip="" />
     </main>
   );
 }
