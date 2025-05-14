@@ -39,11 +39,14 @@ const Footer: React.FC<FooterProps> = ({ Logo }) => {
                                 <FaInstagram />
                             </i>
                         </Link>
-                        <span href="#" className="p-3 bg-[#0077B5] hover:bg-[#47a5f1] rounded-full duration-300">
+                        <Link
+                            href="#"
+                            className="p-3 bg-[#0077B5] hover:bg-[#47a5f1] rounded-full duration-300"
+                        >
                             <i>
                                 <FaLinkedinIn />
                             </i>
-                        </span>
+                        </Link>
                     </div>
                 </div>
 
