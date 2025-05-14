@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { Rajdhani } from 'next/font/google'
+import Link from 'next/link'
 // Define prop types for TypeScript
 interface HerosectionProps {
     imageUrl: string;
@@ -26,9 +27,12 @@ const Herosection: React.FC<HerosectionProps> = ({ imageUrl, Descrip }) => { // 
                         <button className="px-6 py-3 text-white bg-[#cd3534] rounded-lg hover:bg-red-500 z-10">
                             Get started
                         </button>
-                        <button className="px-6 py-3 text-[#cd3534] border border-[#cd3534] rounded-lg hover:bg-[#cd3534] hover:text-white duration-300 z-50">
-                            Explore Our Services
-                        </button>
+
+                        <Link href="/services">
+                            <button className="px-6 py-3 text-[#cd3534] border border-[#cd3534] rounded-lg hover:bg-[#cd3534] hover:text-white duration-300 z-50">
+                                Explore Our Services
+                            </button>
+                        </Link>
                     </div>
                 </div>
 

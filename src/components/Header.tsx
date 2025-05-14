@@ -11,7 +11,7 @@ const Header = () => {
 
 
     return (
-        <header className='relative'>
+        <header className='relative custom-box-shadow'>
             <div className="max-w-[1600px] mx-auto flex justify-between py-4 px-6 items-center">
                 <div className='flex items-center gap-4'>
                     <div>

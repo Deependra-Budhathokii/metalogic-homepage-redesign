@@ -3,7 +3,12 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/f
 import Image from 'next/image'
 import Link from 'next/link'
 
-const Footer = ({ Logo }) => {
+
+interface FooterProps {
+    Logo: string
+}
+
+const Footer: React.FC<FooterProps> = ({ Logo }) => {
     return (
         <footer className="text-white bg-black">
             <div className="container px-6 py-16">
@@ -11,21 +16,21 @@ const Footer = ({ Logo }) => {
                 <div className="flex flex-wrap items-center justify-between mb-12 gap-y-6">
                     <div className="text-3xl tracking-wider capitalize logo">
                         <Link href="/">
-                            <Image src={Logo} width={100} height={40} />
+                            <Image src={Logo} width={100} height={40} alt="metalogic logo" />
                         </Link>
                     </div>
                     <div className="flex gap-6 social_icons">
-                        <span href="#" className="p-3 bg-[#4267B2] rounded-full hover:bg-[#477fef] duration-300">
+                        <Link href="#" className="p-3 bg-[#4267B2] rounded-full hover:bg-[#477fef] duration-300">
                             <i>
                                 <FaFacebookF />
                             </i>
-                        </span>
-                        <span href="#" className="p-3 bg-[#1DA1F2] rounded-full hover:bg-[#44a9e8] duration-300">
+                        </Link>
+                        <Link href="#" className="p-3 bg-[#1DA1F2] rounded-full hover:bg-[#44a9e8] duration-300">
                             <i>
                                 <FaTwitter />
                             </i>
-                        </span>
-                        <span
+                        </Link>
+                        <Link
                             href="#"
                             target="_blank"
                             className="p-3 rounded-full bg-[#E1306C] hover:bg-[#ef435f] duration-300"
@@ -33,7 +38,7 @@ const Footer = ({ Logo }) => {
                             <i>
                                 <FaInstagram />
                             </i>
-                        </span>
+                        </Link>
                         <span href="#" className="p-3 bg-[#0077B5] hover:bg-[#47a5f1] rounded-full duration-300">
                             <i>
                                 <FaLinkedinIn />

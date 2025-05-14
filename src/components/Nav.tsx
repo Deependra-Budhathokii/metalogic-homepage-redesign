@@ -14,10 +14,10 @@ interface MenuItem {
 const Nav = ({ isOpen, setIsOpen }: NavProps) => {
     const menuItems: MenuItem[] = [
         { name: 'Home', link: '/' },
-        { name: 'Services', link: '/#services' },
+        { name: 'Services', link: '/services' },
+        { name: 'about', link: '/about' },
         { name: 'Career', link: '/#career' },
         { name: 'Blogs', link: '/#blogs' },
-        { name: 'About Us', link: '/#aboutus' },
 
 
     ];
