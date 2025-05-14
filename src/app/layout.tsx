@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter, Roboto_Mono, Rajdhani, Poppins, Schibsted_Grotesk } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 
 const poppins = Poppins({
@@ -47,6 +48,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Footer Logo="/metalogic-favicon.svg" />
       </body>
     </html>
   );
