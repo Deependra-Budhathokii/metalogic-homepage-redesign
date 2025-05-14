@@ -35,7 +35,7 @@ p {
   @apply w-full;
 }
 
-/* For Hero HI text styling(Decorative typography) */
+/* For Hero text styling(Decorative typography) */
 .hero_hi {
   -webkit-text-stroke: 1px #161617;
   /* text-stroke: 1px black; */
@@ -55,3 +55,12 @@ p {
 .animate-pulse-scale {
   animation: pulse-scale 3s ease-in-out infinite;
 } */
+
+.card_box_shadow {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.contact_card_shadow {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}

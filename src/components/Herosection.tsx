@@ -20,7 +20,7 @@ const Herosection: React.FC<HerosectionProps> = ({ imageUrl, Descrip }) => { // 
                         Powering Progress Through <span className="text-[#cd3534]"> Digital Innovation</span>
                     </h1>
                     <p className="mt-5 mb-10 leading-relaxed font-[300]">
-                        Metalogic delivers intelligent software solutions that drive transformation and growth. We help businesses adapt, scale, and thrive in the digital era through innovation, reliability, and a focus on results-driven technology and consulting services.
+                        {Descrip}
                     </p>
                     <div className="flex justify-center gap-4 lg:justify-start">
                         <button className="px-6 py-3 text-white bg-[#cd3534] rounded-lg hover:bg-red-500 z-10">
