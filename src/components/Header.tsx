@@ -19,8 +19,8 @@ const Header = () => {
                             <Image src={logo_path} alt="logo" width={50} height={50} />
                         </Link>
                     </div>
-                    <Link href="#" target="_blank" rel="noopener noreferrer" className="hidden hover:underline sm:inline-block">
-                        <span className='font-medium  opacity-80 capitalize'>metalogic </span>
+                    <Link href="#" target="_blank" rel="noopener noreferrer" className=" hover:underline inline-block">
+                        <span className='font-medium  text-3xl opacity-80 capitalize'>metalogic </span>
                     </Link>
                 </div>
                 <Nav isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
