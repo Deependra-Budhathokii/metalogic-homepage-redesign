@@ -12,11 +12,11 @@ const WhyPoint = ({ number, title, description }: WhyPointProps) => (
     <div className="flex flex-col items-end space-y-4 md:text-right animate-fade-up"
         data-aos="fade-up" data-aos-delay="300">
         <span className="flex items-center justify-center w-14 h-14 text-2xl font-bold 
-                     bg-blue-50 text-blue-900 rounded-full">
+                     bg-blue-50 dark:bg-blue-900 text-blue-900 dark:text-blue-100 rounded-full transition-colors">
             {number}
         </span>
-        <h3 className="text-xl font-semibold text-gray-900">{title}</h3>
-        <p className="text-base text-gray-600 leading-relaxed">{description}</p>
+        <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100">{title}</h3>
+        <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed">{description}</p>
     </div>
 );
 
@@ -61,15 +61,15 @@ const Whymetalogic = () => {
 
 
     return (
-        <section className=" bg-gray-50">
+        <section className="bg-gray-50 dark:bg-gray-800/50 transition-colors">
             <div className="container mx-auto px-6 py-16 ">
 
                 <div className="text-center mb-16">
-                    <h1 className="my-3 text-4xl font-bold tracking-wide text-center capitalize underline-offset-[10px] decoration-gray-900 mb-7">
+                    <h1 className="my-3 text-4xl font-bold tracking-wide text-center capitalize underline-offset-[10px] decoration-gray-900 dark:decoration-gray-100 mb-7 text-gray-900 dark:text-gray-100">
 
                         why Metalogic?
                     </h1>
-                    <p className="text-gray-600 max-w-3xl mx-auto">
+                    <p className="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
                         At Metalogic, we take pride in delivering cutting-edge digital solutions that empower businesses to innovate, grow, and stay ahead in a rapidly evolving tech landscape. Here's why Metalogic stands out as a trusted technology partner for future-ready organizations
                     </p>
                 </div>
@@ -95,7 +95,7 @@ const Whymetalogic = () => {
                                 src="/metalogic-phn-mockup.svg"
                                 alt="Metalogic Features"
                                 // fill
-                                className="object-contain z-10"
+                                className="object-contain z-10 dark:brightness-95 dark:contrast-125 transition-all"
                                 width={1370}
                                 height={640}
                             />
@@ -109,11 +109,11 @@ const Whymetalogic = () => {
                                 className="flex flex-col items-start space-y-4 md:text-left animate-fade-up"
                                 data-aos="fade-up" data-aos-delay="300">
                                 <span className="flex items-center justify-center w-14 h-14 text-2xl 
-                               font-bold bg-blue-50 text-blue-900 rounded-full">
+                               font-bold bg-blue-50 dark:bg-blue-900 text-blue-900 dark:text-blue-100 rounded-full transition-colors">
                                     {point.number}
                                 </span>
-                                <h3 className="text-xl font-semibold text-gray-900">{point.title}</h3>
-                                <p className="text-base text-gray-600 leading-relaxed">{point.description}</p>
+                                <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100">{point.title}</h3>
+                                <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed">{point.description}</p>
                             </div>
                         ))}
                     </div>

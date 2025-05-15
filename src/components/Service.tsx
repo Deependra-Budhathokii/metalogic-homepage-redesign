@@ -53,9 +53,9 @@ const Services: ServicecardProps[] = [
 
 const Service = () => {
     return (
-        <section>
+        <section className="bg-white dark:bg-gray-900 transition-colors duration-200">
             <div className="container mx-auto px-6 py-16">
-                <h1 className="my-3 text-4xl font-bold tracking-wide text-center capitalize underline-offset-[10px] decoration-gray-900">
+                <h1 className="my-3 text-4xl font-bold tracking-wide text-center capitalize underline-offset-[10px] decoration-gray-900 dark:decoration-gray-100 text-gray-900 dark:text-gray-100">
                     our Services
                 </h1>
 
