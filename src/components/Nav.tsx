@@ -16,23 +16,23 @@ const Nav = ({ isOpen, setIsOpen }: NavProps) => {
         { name: 'Home', link: '/' },
         { name: 'Services', link: '/services' },
         { name: 'about', link: '/about' },
-        { name: 'Career', link: '/#career' },
+        { name: 'Career', link: '/testcarrer' },
         { name: 'Blogs', link: '/#blogs' },
 
 
     ];
 
     return (
-        <nav className="z-50 ">
+        <nav className="z-50">
             {/* Hamburger menu button - visible only on mobile */}
             <button
                 className="p-2 lg:hidden"
                 onClick={() => setIsOpen(!isOpen)}
                 aria-label="Toggle menu"
             >
-                <div className={`w-6 h-[2px] bg-gray-800 transition-all duration-300 ${isOpen ? 'rotate-45 translate-y-[7px]' : ''}`}></div>
-                <div className={`w-6 h-[2px] bg-gray-800 my-[5px] transition-opacity duration-300 ${isOpen ? 'opacity-0' : ''}`}></div>
-                <div className={`w-6 h-[2px] bg-gray-800 transition-all duration-300 ${isOpen ? '-rotate-45 -translate-y-[7px]' : ''}`}></div>
+                <div className={`w-6 h-[2px] bg-gray-800 dark:bg-gray-200 transition-all duration-300 ${isOpen ? 'rotate-45 translate-y-[7px]' : ''}`}></div>
+                <div className={`w-6 h-[2px] bg-gray-800 dark:bg-gray-200 my-[5px] transition-opacity duration-300 ${isOpen ? 'opacity-0' : ''}`}></div>
+                <div className={`w-6 h-[2px] bg-gray-800 dark:bg-gray-200 transition-all duration-300 ${isOpen ? '-rotate-45 -translate-y-[7px]' : ''}`}></div>
             </button>
 
             {/* Navigation menu */}
@@ -43,15 +43,15 @@ const Nav = ({ isOpen, setIsOpen }: NavProps) => {
                 top-[4rem] lg:top-0
                 left-0 lg:left-auto
                 w-full lg:w-auto
-                bg-white lg:bg-transparent
-                shadow-lg lg:shadow-none
+                bg-white dark:bg-gray-900 lg:bg-transparent lg:dark:bg-transparent
+                shadow-lg dark:shadow-gray-800 lg:shadow-none
                 transition-transform duration-300 ease-in-out
                 ${isOpen ? 'translate-y-0' : '-translate-y-full lg:translate-y-0'}
             `}>
                 <ul className='flex flex-col gap-6 p-6 lg:flex-row lg:p-0'>
                     {menuItems.map((item: MenuItem, index: number) => (
                         <li key={index}>
-                            <Link href={item.link} className='menu_style' onClick={() => setIsOpen(false)}>
+                            <Link href={item.link} className="text-gray-800 dark:text-gray-200 hover:text-[#cd3534] dark:hover:text-[#ff4545] transition-colors capitalize font-medium" onClick={() => setIsOpen(false)}>
                                 {item.name}
                             </Link>
                         </li>

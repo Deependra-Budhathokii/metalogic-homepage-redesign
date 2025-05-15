@@ -3,7 +3,7 @@ import { Geist, Geist_Mono, Inter, Roboto_Mono, Rajdhani, Poppins, Schibsted_Gro
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
+import { ThemeProvider } from "@/components/theme-provider";
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -36,7 +36,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         {/* // add favicon  */}
         <link rel="icon" href="/metalogic-favicon.svg" sizes="any" type="image/x-icon" />
@@ -44,11 +44,18 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body
-        className={`${poppins.className}  antialiased`}
+        className={`${poppins.className} antialiased`}
       >
-        <Header />
-        {children}
-        <Footer Logo="/metalogic-favicon.svg" />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Header />
+          {children}
+          <Footer Logo="/metalogic-favicon.svg" />
+        </ThemeProvider>
       </body>
     </html>
   );
