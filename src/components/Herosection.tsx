@@ -18,18 +18,18 @@ const Herosection: React.FC<HerosectionProps> = ({ imageUrl, Descrip }) => { // 
                 {/* left side */}
                 <div className="mt-5 text-center lg:text-left  order-2 lg:order-1">
                     <h1 className="mb-6 mt-10 lg:mt-0 text-4xl/snug font-bold uppercase text-[#161617]">
-                        Powering Progress Through <span className="text-[#cd3534]"> Digital Innovation</span>
+                        Powering Progress Through <span className="text-[#cd3534]  dark:text-[#a12727]"> Digital Innovation</span>
                     </h1>
-                    <p className="mt-5 mb-10 leading-relaxed font-[300]">
+                    <p className="mt-5 mb-10 leading-relaxed font-[300] dark:text-gray-950">
                         {Descrip}
                     </p>
                     <div className="flex justify-center gap-4 lg:justify-start">
-                        <button className="px-6 py-3 text-white bg-[#cd3534] rounded-lg hover:bg-red-500 z-10">
+                        <button className="px-6 py-3 text-white bg-[#cd3534] rounded-lg hover:bg-red-500 z-10 dark:bg-[#a12727] dark:hover:bg-[#cd3534]">
                             Get started
                         </button>
 
                         <Link href="/services">
-                            <button className="px-6 py-3 text-[#cd3534] border border-[#cd3534] rounded-lg hover:bg-[#cd3534] hover:text-white duration-300 z-50">
+                            <button className="px-6 py-3 text-[#cd3534] border border-[#cd3534] rounded-lg hover:bg-[#cd3534] hover:text-white duration-300 z-50 dark:bg-transparent dark:text-[#cd3534] dark:border-[#a12727] dark:hover:bg-[#a12727] dark:hover:text-white">
                                 Explore Our Services
                             </button>
                         </Link>
