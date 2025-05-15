@@ -9,7 +9,7 @@ interface WhyPointProps {
 }
 
 const WhyPoint = ({ number, title, description }: WhyPointProps) => (
-    <div className="space-y-4  animate-fade-up"
+    <div className="space-y-4  lg:text-right  animate-fade-up"
         data-aos="fade-up" data-aos-delay="300">
         <div className='flex lg:justify-end '>
             <span className="flex items-center justify-center w-14 h-14   text-2xl font-bold 
