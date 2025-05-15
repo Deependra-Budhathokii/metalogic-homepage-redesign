@@ -51,7 +51,7 @@ const Nav = ({ isOpen, setIsOpen }: NavProps) => {
                 <ul className='flex flex-col gap-6 p-6 lg:flex-row lg:p-0'>
                     {menuItems.map((item: MenuItem, index: number) => (
                         <li key={index}>
-                            <Link href={item.link} className="text-gray-800 dark:text-gray-200 hover:text-[#cd3534] dark:hover:text-[#ff4545] transition-colors capitalize font-medium" onClick={() => setIsOpen(false)}>
+                            <Link href={item.link} className="text-gray-800 dark:text-gray-200 menu_style transition-colors capitalize font-medium" onClick={() => setIsOpen(false)}>
                                 {item.name}
                             </Link>
                         </li>

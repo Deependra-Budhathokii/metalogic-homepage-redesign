@@ -20,7 +20,7 @@ const Herosection: React.FC<HerosectionProps> = ({ imageUrl, Descrip }) => { // 
                     <h1 className="mb-6 mt-10 lg:mt-0 text-4xl/snug font-bold uppercase text-[#161617]">
                         Powering Progress Through <span className="text-[#cd3534]  dark:text-[#a12727]"> Digital Innovation</span>
                     </h1>
-                    <p className="mt-5 mb-10 leading-relaxed font-[300] dark:text-gray-950">
+                    <p className="mt-5 mb-10 leading-relaxed  font-[300] dark:text-gray-950">
                         {Descrip}
                     </p>
                     <div className="flex justify-center gap-4 lg:justify-start">

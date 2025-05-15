@@ -17,16 +17,18 @@
 }
 
 p {
-  @apply text-base tracking-[0.05rem];
+  @apply text-lg tracking-[0.05rem];
 }
+
+/* hover:text-[#cd3534] dark:hover:text-[#ff4545] */
 
 /* NAV MENU STYLING */
 .menu_style {
-  @apply relative py-1 text-gray-800;
+  @apply relative py-1 dark:text-gray-200;
 }
 
 .menu_style::after {
-  @apply content-[''] absolute left-0 bottom-0 w-0 h-[2px] bg-gray-800 transition-all duration-300;
+  @apply content-[''] absolute left-0 bottom-0 w-0 h-[2px] bg-[#ff4545] transition-all duration-300;
 }
 
 .menu_style:hover::after {
@@ -188,4 +190,8 @@ p {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+html {
+  font-size: clamp(15px, 1.5vw, 16px);
 }
