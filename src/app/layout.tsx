@@ -40,7 +40,7 @@ export default function RootLayout({
       <head>
         {/* // add favicon  */}
         <link rel="icon" href="/metalogic-favicon.svg" sizes="any" type="image/x-icon" />
-        <link rel="apple-touch-icon" href="/metalogic-logo.png" sizes="any" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="/metalogic-favicon.svg" sizes="any" type="image/x-icon" />
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body
