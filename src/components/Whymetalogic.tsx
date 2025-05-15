@@ -9,12 +9,14 @@ interface WhyPointProps {
 }
 
 const WhyPoint = ({ number, title, description }: WhyPointProps) => (
-    <div className="flex flex-col items-end space-y-4 md:text-right animate-fade-up"
+    <div className="space-y-4  animate-fade-up"
         data-aos="fade-up" data-aos-delay="300">
-        <span className="flex items-center justify-center w-14 h-14 text-2xl font-bold 
+        <div className='flex lg:justify-end '>
+            <span className="flex items-center justify-center w-14 h-14   text-2xl font-bold 
                      bg-blue-50 dark:bg-blue-900 text-blue-900 dark:text-blue-100 rounded-full transition-colors">
-            {number}
-        </span>
+                {number}
+            </span>
+        </div>
         <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100">{title}</h3>
         <p className="text-base text-gray-600 dark:text-gray-300 leading-relaxed">{description}</p>
     </div>
@@ -75,7 +77,7 @@ const Whymetalogic = () => {
                 </div>
 
                 {/* Main Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
                     {/* Left Column */}
                     <div className="space-y-12">
                         {leftPoints.map((point, index) => (
@@ -85,7 +87,7 @@ const Whymetalogic = () => {
 
                     {/* Center Column - Image */}
                     <div className="relative flex items-center justify-center">
-                        <div className="relative w-full aspect-square">
+                        <div className="relative w-full aspect-square ">
                             {/* Decorative Circle */}
                             {/* <div className="absolute inset-0 border-4 border-blue-50 rounded-full 
                             transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2
