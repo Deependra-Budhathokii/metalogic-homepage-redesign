@@ -16,7 +16,7 @@ const Nav = ({ isOpen, setIsOpen }: NavProps) => {
         { name: 'Home', link: '/' },
         { name: 'Services', link: '/services' },
         { name: 'about', link: '/about' },
-        { name: 'Career', link: '/testcarrer' },
+        { name: 'Career', link: '/#career' },
         { name: 'Blogs', link: '/#blogs' },
 
 
